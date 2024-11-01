@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujumbe Maalum</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main styling for background and layout */
+        body, html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #ffebcd, #ffe4e1);
+            color: #333;
+        }
+
+        /* Styling for the main container */
+        .container {
+            width: 80%;
+            max-width: 500px;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Profile image styling */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 2px solid #ff6b6b;
+        }
+
+        /* Heart icon */
+        .heart {
+            font-size: 2.5rem;
+            color: #ff4b5c;
+            margin: 10px 0;
+            animation: beat 1.2s infinite;
+        }
+
+        /* Header text */
+        .header {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Message text */
+        .message {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        /* Button styling */
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff4757;
+        }
+
+        /* Keyframes for animations */
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile image (replace "img/profile.jpg" with the actual image path) -->
+        <img src="me.png" alt="Picha ya Profaili" class="profile-img">
+        
+        <!-- Heart icon and Header -->
+        <div class="heart">❤️</div>
+        <div class="header">Kwa Mpenzi Wangu wa Pekee</div>
+        
+        <!-- Message in Swahili -->
+        <p class="message">
+            Katika safari yangu ya maisha, hakuna ambaye ameleta furaha kama wewe.<br>
+            Upo ndani ya moyo wangu na kunipa sababu ya kutabasamu kila siku.<br>
+            Asante kwa upendo wako, na ahadi yangu ni kukupenda daima.<br><br>
+            Milele wako, kwa upendo mwingi. ❤️
+        </p>
+        
+        <!-- Button (optional link to more content or message) -->
+        <a href="p.html" class="button">Pamoja Milele</a>
+    </div>
+</body>
+</html>

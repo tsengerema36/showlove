@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamoja Milele</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main background and layout styling */
+        body, html {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffebcd, #ffc1e3);
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* Container styling */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            padding: 40px 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+            position: relative;
+        }
+
+        /* Profile image styling */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: -70px;
+            border: 4px solid #ff6b6b;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Heart animation */
+        .heart {
+            font-size: 3rem;
+            color: #ff4b5c;
+            margin: 20px 0;
+            animation: beat 1.2s infinite;
+        }
+
+        /* Header text styling */
+        .header {
+            font-size: 1.7em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Message styling */
+        .message {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .button {
+            padding: 12px 25px;
+            font-size: 1em;
+            background-color: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .button:hover {
+            background-color: #ff4757;
+        }
+
+        /* Keyframes for animations */
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile image (replace "img/profile.jpg" with the actual path to your image) -->
+        <img src="me.png" alt="Picha ya Profaili" class="profile-img">
+
+        <!-- Heart icon and Header -->
+        <div class="heart">❤️</div>
+        <div class="header">Pamoja Milele</div>
+
+        <!-- Message in Swahili -->
+        <p class="message">
+            Nakupenda kwa moyo wangu wote, na kila siku inaongeza thamani ya uhusiano wetu. Uwepo wako unanipa furaha na matumaini, na uaminifu wako ni zawadi kuu zaidi ya yote. Tutashikamana milele, kupita kila changamoto na furaha. Wewe ni mpenzi wa kipekee, na sipo tayari kwa chochote kingine isipokuwa pamoja nawe.<br><br>
+            Milele Wako, na kwa upendo wote, ❤️
+        </p>
+
+        <!-- Button (optional link to more content or message) -->
+        <a href="h.html" class="button">Tazama Mengine</a>
+    </div>
+</body>
+</html>
